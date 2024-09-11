@@ -1,8 +1,15 @@
-import Link from 'next/link';
 import { Suspense } from 'react';
+import Link from 'next/link';
+
 import classes from './page.module.css';
 import MealsGrid from '@/components/meals/meals-grid';
 import { getMeals } from '@/lib/meals';
+
+export const metadata = {
+  title: 'Discover Delicious Meals - Foodies Community | Explore, Share & Cook',
+  description:
+    'Explore a wide variety of mouth-watering meals shared by food enthusiasts in our community. Discover new recipes, share your own dishes, and connect with fellow food lovers today!',
+};
 
 async function Meals() {
   const meals = await getMeals();
@@ -14,7 +21,7 @@ export default async function MealsPage() {
       <header className={classes.header}>
         <h1>
           Delicious meals, created
-          <span className={classes.highlight}>by you</span>
+          <span className={classes.highlight}> by you</span>
         </h1>
         <p>
           Choose your favourite recipe and cook it yourself. It is easy and fun!

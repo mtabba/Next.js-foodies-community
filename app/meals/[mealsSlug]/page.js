@@ -4,6 +4,18 @@ import { notFound } from 'next/navigation';
 import { getMeal } from '@/lib/meals';
 import classes from './page.module.css';
 
+export async function generateMetadata({ params }) {
+  const meal = getMeal(params.mealsSlug);
+
+  if (!meal) {
+    notFound();
+  }
+
+  return {
+    title: `${meal.title}Discover Delicious Meals - Foodies Community | Explore, Share & Cook`,
+    description: `${meal.summary}Explore a wide variety of mouth-watering meals shared by food enthusiasts in our community. Discover new recipes, share your own dishes, and connect with fellow food lovers today!`,
+  };
+}
 export default function MealDetailsPage({ params }) {
   const meal = getMeal(params.mealsSlug);
   if (!meal) {
@@ -16,7 +28,7 @@ export default function MealDetailsPage({ params }) {
     <>
       <header className={classes.header}>
         <div className={classes.image}>
-          <Image src={meal.image} fill />
+          <Image src={meal.image} fill sizes="auto" alt={meal.title} />
         </div>
         <div className={classes.headerText}>
           <h1>{meal.title}</h1>
