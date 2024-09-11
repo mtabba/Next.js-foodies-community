@@ -15,9 +15,6 @@ export default function Home() {
             <h1>Next Level Food to eat sleep and repeat</h1>
             <p>Taste and share food from all over the world</p>
           </div>
-          <div className={classes.cta}></div>
-          <Link href="/community">Join the Community</Link>
-          <Link href="/meals">Explore Meals</Link>
         </div>
       </header>
       <main>
