@@ -9,9 +9,8 @@ export default function MealItem({ title, slug, image, summary, creator }) {
       <header>
         <div className={classes.image}>
           <Image
-            src={` https://mtabbaeatsleeprepeat.s3.amazonaws.com/${image}`}
+            src={`https://mtabbaeatsleeprepeat.s3.amazonaws.com/${image}`}
             alt={title}
-            sizes="auto"
             fill
           />
         </div>

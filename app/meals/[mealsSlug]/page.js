@@ -31,7 +31,6 @@ export default function MealDetailsPage({ params }) {
           <Image
             src={`https://mtabbaeatsleeprepeat.s3.amazonaws.com/${meal.image}`}
             fill
-            sizes="auto"
             alt={meal.title}
           />
         </div>
