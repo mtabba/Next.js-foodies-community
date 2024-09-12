@@ -13,6 +13,7 @@ export const metadata = {
 
 async function Meals() {
   const meals = await getMeals();
+  // console.log(meals);
   return <MealsGrid meals={meals} />;
 }
 export default async function MealsPage() {

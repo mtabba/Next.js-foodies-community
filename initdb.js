@@ -5,7 +5,7 @@ const dummyMeals = [
   {
     title: 'Juicy Cheese Burger',
     slug: 'juicy-cheese-burger',
-    image: '/images/burger.jpg',
+    image: 'burger.jpg',
     summary:
       'A mouth-watering burger with a juicy beef patty and melted cheese, served in a soft bun.',
     instructions: `
@@ -22,12 +22,12 @@ const dummyMeals = [
          Complete the assembly with the top bun and serve hot.
     `,
     creator: 'John Doe',
-    creator_email: 'johndoe@gmail.com',
+    creator_email: 'johndoe@example.com',
   },
   {
     title: 'Spicy Curry',
     slug: 'spicy-curry',
-    image: '/images/curry.jpg',
+    image: 'curry.jpg',
     summary:
       'A rich and spicy curry, infused with exotic spices and creamy coconut milk.',
     instructions: `
@@ -46,13 +46,13 @@ const dummyMeals = [
       5. Serve:
          Enjoy this creamy curry with rice or bread.
     `,
-    creator: ' Mohsin Ovais',
-    creator_email: 'mohsinsyed170@gmail.com',
+    creator: 'Max Schwarz',
+    creator_email: 'max@example.com',
   },
   {
     title: 'Homemade Dumplings',
     slug: 'homemade-dumplings',
-    image: '/images/dumplings.jpg',
+    image: 'dumplings.jpg',
     summary:
       'Tender dumplings filled with savory meat and vegetables, steamed to perfection.',
     instructions: `
@@ -68,13 +68,13 @@ const dummyMeals = [
       4. Serve:
          Enjoy these dumplings hot, with a dipping sauce of your choice.
     `,
-    creator: 'Amnah Razzaki',
-    creator_email: 'amnahrazzaki@gmail.com',
+    creator: 'Emily Chen',
+    creator_email: 'emilychen@example.com',
   },
   {
     title: 'Classic Mac n Cheese',
     slug: 'classic-mac-n-cheese',
-    image: '/images/macncheese.jpg',
+    image: 'macncheese.jpg',
     summary:
       "Creamy and cheesy macaroni, a comforting classic that's always a crowd-pleaser.",
     instructions: `
@@ -94,12 +94,12 @@ const dummyMeals = [
          Serve hot, garnished with parsley if desired.
     `,
     creator: 'Laura Smith',
-    creator_email: 'laurasmith@gmail.com',
+    creator_email: 'laurasmith@example.com',
   },
   {
     title: 'Authentic Pizza',
     slug: 'authentic-pizza',
-    image: '/images/pizza.jpg',
+    image: 'pizza.jpg',
     summary:
       'Hand-tossed pizza with a tangy tomato sauce, fresh toppings, and melted cheese.',
     instructions: `
@@ -116,12 +116,12 @@ const dummyMeals = [
          Slice hot and enjoy with a sprinkle of basil leaves.
     `,
     creator: 'Mario Rossi',
-    creator_email: 'mariorossi@gmail.com',
+    creator_email: 'mariorossi@example.com',
   },
   {
     title: 'Wiener Schnitzel',
     slug: 'wiener-schnitzel',
-    image: '/images/schnitzel.jpg',
+    image: 'schnitzel.jpg',
     summary:
       'Crispy, golden-brown breaded veal cutlet, a classic Austrian dish.',
     instructions: `
@@ -138,12 +138,12 @@ const dummyMeals = [
       Serve hot with a slice of lemon and a side of potato salad or greens.
  `,
     creator: 'Franz Huber',
-    creator_email: 'franzhuber@gmail.com',
+    creator_email: 'franzhuber@example.com',
   },
   {
     title: 'Fresh Tomato Salad',
     slug: 'fresh-tomato-salad',
-    image: '/images/tomato-salad.jpg',
+    image: 'tomato-salad.jpg',
     summary:
       'A light and refreshing salad with ripe tomatoes, fresh basil, and a tangy vinaigrette.',
     instructions: `
@@ -160,7 +160,7 @@ const dummyMeals = [
          Enjoy this simple, flavorful salad as a side dish or light meal.
     `,
     creator: 'Sophia Green',
-    creator_email: 'sophiagreen@gmail.com',
+    creator_email: 'sophiagreen@example.com',
   },
 ];
 
