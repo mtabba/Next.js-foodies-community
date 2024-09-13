@@ -22,6 +22,10 @@ export default function MealDetailsPage({ params }) {
     notFound();
   }
 
+  const contentfulImageLoader = (src, width) => {
+    return `${src}?w=${width}`;
+  };
+
   meal.instructions = meal.instructions.replace(/\n/g, '<br>');
 
   return (
@@ -29,6 +33,7 @@ export default function MealDetailsPage({ params }) {
       <header className={classes.header}>
         <div className={classes.image}>
           <Image
+            loader={contentfulImageLoader}
             src={`https://mtabbaeatsleeprepeat.s3.amazonaws.com/${meal.image}`}
             fill
             alt={meal.title}
