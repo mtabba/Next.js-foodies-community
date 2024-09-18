@@ -25,10 +25,6 @@ const images = [
 export default function ImageSlideshow() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const contentfulImageLoader = (src, width) => {
-    return `${src}?w=${width}`;
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
@@ -43,7 +39,6 @@ export default function ImageSlideshow() {
     <div className={classes.slideshow}>
       {images.map((image, index) => (
         <Image
-          loader={contentfulImageLoader}
           key={index}
           src={image.image}
           className={index === currentImageIndex ? classes.active : ''}
