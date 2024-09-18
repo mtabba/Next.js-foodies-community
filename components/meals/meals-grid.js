@@ -7,6 +7,7 @@ const MealsGrid = ({ meals }) => {
       {meals.map((meal) => (
         <li key={meal.id}>
           <MealItem {...meal} />
+          {console.log(meal)}
         </li>
       ))}
     </ul>

@@ -12,8 +12,8 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${meal.title}Discover Delicious Meals - Foodies Community | Explore, Share & Cook`,
-    description: `${meal.summary}Explore a wide variety of mouth-watering meals shared by food enthusiasts in our community. Discover new recipes, share your own dishes, and connect with fellow food lovers today!`,
+    title: meal.title,
+    description: meal.summary,
   };
 }
 export default function MealDetailsPage({ params }) {
@@ -21,6 +21,7 @@ export default function MealDetailsPage({ params }) {
   if (!meal) {
     notFound();
   }
+  console.log(meal);
 
   // async function contentfulImageLoader(src, width) {
   //   'use server';
