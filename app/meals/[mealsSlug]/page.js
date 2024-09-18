@@ -4,19 +4,20 @@ import { notFound } from 'next/navigation';
 import { getMeal } from '@/lib/meals';
 import classes from './page.module.css';
 
-// export async function generateMetadata({ params }) {
-//   const meal = getMeal(params.mealsSlug);
+export async function generateMetadata({ params }) {
+  const meal = getMeal(params.mealsSlug);
 
-//   if (!meal) {
-//     notFound();
-//   }
+  if (!meal) {
+    notFound();
+  }
 
-//   return {
-//     title: meal.title,
-//     description: meal.summary,
-//   };
-// }
-export default function MealDetailsPage({ params }) {
+  return {
+    title: meal.title,
+    description: meal.summary,
+  };
+}
+
+export default async function MealDetailsPage({ params }) {
   const meal = getMeal(params.mealsSlug);
   if (!meal) {
     notFound();
