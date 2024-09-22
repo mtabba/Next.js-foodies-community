@@ -6,6 +6,16 @@
   max-width: 80rem;
 }
 
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  .image {
+    width: 100% !important;
+    height: 25rem !important;
+  }
+}
+
 .image {
   position: relative;
   width: 30rem;
